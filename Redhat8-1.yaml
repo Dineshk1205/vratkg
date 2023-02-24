@@ -1,0 +1,28 @@
+formatVersion: 1
+name: Redhat 8
+inputs: {}
+resources:
+  redhat:
+    type: Cloud.vSphere.Machine
+    metadata:
+      layoutPosition:
+        - 0
+        - 0
+    properties:
+      image: Redhat8
+      flavor: Large
+      constraints:
+        - tag: vcenter
+      networks:
+        - network: ${resource.vSphere_Network.id}
+          assignment: static
+  vSphere_Network:
+    type: Cloud.vSphere.Network
+    metadata:
+      layoutPosition:
+        - 1
+        - 0
+    properties:
+      networkType: existing
+      constraints:
+        - tag: vlan90
