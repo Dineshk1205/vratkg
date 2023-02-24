@@ -1,0 +1,2141 @@
+---
+project: development
+kind: PIPELINE
+name: Sample Web Application
+icon: data:image/png;base64,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
+enabled: true
+global: false
+description: Sample Nginx app deployment and Exposing Application using metallb Load Balancer
+concurrency: 10
+workspace:
+  type: DOCKER
+  endpoint: ''
+  image: ''
+  registry: ''
+  path: ''
+  autoCloneForTrigger: false
+  limits:
+    cpu: 1.0
+    memory: 512
+stageOrder:
+- Sample Application Deployment
+stages:
+  Sample Application Deployment:
+    taskOrder:
+    - Creating metallb namespace
+    - Metalb Pod Deployment
+    - Configmap
+    - Nginx Deployment
+    tasks:
+      Creating metallb namespace:
+        type: K8S
+        endpoints:
+          kubernetesServer: tkgworkloadcluster1
+        input:
+          action: APPLY
+          timeout: 15
+          filePath: ''
+          scmConstants: {
+            }
+          yaml: |
+            apiVersion: v1
+            kind: Namespace
+            metadata:
+              name: metallb-system
+              labels:
+                app: metallb
+      Configmap:
+        type: K8S
+        endpoints:
+          kubernetesServer: tkgworkloadcluster1
+        input:
+          action: APPLY
+          timeout: 15
+          filePath: ''
+          scmConstants: {
+            }
+          yaml: |-
+            apiVersion: metallb.io/v1beta1
+            kind: IPAddressPool
+            metadata:
+              name: production
+              namespace: metallb-system
+            spec:
+              addresses:
+              - 172.91.0.10-172.91.0.50
+            ---
+            apiVersion: metallb.io/v1beta1
+            kind: L2Advertisement
+            metadata:
+              name: l2-advert
+              namespace: metallb-system
+      Nginx Deployment:
+        type: K8S
+        endpoints:
+          kubernetesServer: tkgworkloadcluster1
+        input:
+          action: APPLY
+          timeout: 15
+          filePath: ''
+          scmConstants: {
+            }
+          yaml: |-
+            ---
+            apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+            kind: Deployment
+            metadata:
+              name: nginx
+            spec:
+              strategy:
+                type: Recreate
+              selector:
+                matchLabels:
+                  app: nginx
+              replicas: 1 # tells deployment to run 1 pods matching the template
+              template: # create pods using pod definition in this template
+                metadata:
+                  labels:
+                    app: nginx
+                spec:
+                  containers:
+                  - name: nginx
+                    image: dinesh1205reddy/nginx:v.0
+                    ports:
+                    - containerPort: 80
+            ---
+            apiVersion: v1
+            kind: Service
+            metadata:
+              name: nginx
+              namespace: default
+              labels:
+                app: nginx
+            spec:
+              externalTrafficPolicy: Local
+              ports:
+              - name: http
+                port: 80
+                protocol: TCP
+                targetPort: 80
+              selector:
+                app: nginx
+              type: LoadBalancer
+      Metalb Pod Deployment:
+        type: K8S
+        endpoints:
+          kubernetesServer: tkgworkloadcluster1
+        input:
+          action: APPLY
+          timeout: 15
+          filePath: ''
+          scmConstants: {
+            }
+          yaml: |
+            apiVersion: v1
+            kind: Namespace
+            metadata:
+              labels:
+                pod-security.kubernetes.io/audit: privileged
+                pod-security.kubernetes.io/enforce: privileged
+                pod-security.kubernetes.io/warn: privileged
+              name: metallb-system
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              name: addresspools.metallb.io
+            spec:
+              conversion:
+                strategy: Webhook
+                webhook:
+                  clientConfig:
+                    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlGWlRDQ0EwMmdBd0lCQWdJVU5GRW1XcTM3MVpKdGkrMmlSQzk1WmpBV1MxZ3dEUVlKS29aSWh2Y05BUUVMDQpCUUF3UWpFTE1Ba0dBMVVFQmhNQ1dGZ3hGVEFUQmdOVkJBY01ERVJsWm1GMWJIUWdRMmwwZVRFY01Cb0dBMVVFDQpDZ3dUUkdWbVlYVnNkQ0JEYjIxd1lXNTVJRXgwWkRBZUZ3MHlNakEzTVRrd09UTXlNek5hRncweU1qQTRNVGd3DQpPVE15TXpOYU1FSXhDekFKQmdOVkJBWVRBbGhZTVJVd0V3WURWUVFIREF4RVpXWmhkV3gwSUVOcGRIa3hIREFhDQpCZ05WQkFvTUUwUmxabUYxYkhRZ1EyOXRjR0Z1ZVNCTWRHUXdnZ0lpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElDDQpEd0F3Z2dJS0FvSUNBUUNxVFpxMWZRcC9vYkdlenhES0o3OVB3Ny94azJwellualNzMlkzb1ZYSm5sRmM4YjVlDQpma2ZZQnY2bndscW1keW5PL2phWFBaQmRQSS82aFdOUDBkdVhadEtWU0NCUUpyZzEyOGNXb3F0MGNTN3pLb1VpDQpvcU1tQ0QvRXVBeFFNZjhRZDF2c1gvVllkZ0poVTZBRXJLZEpIaXpFOUJtUkNkTDBGMW1OVW55Rk82UnRtWFZUDQpidkxsTDVYeTc2R0FaQVBLOFB4aVlDa0NtbDdxN0VnTWNiOXlLWldCYmlxQ3VkTXE5TGJLNmdKNzF6YkZnSXV4DQo1L1pXK2JraTB2RlplWk9ZODUxb1psckFUNzJvMDI4NHNTWW9uN0pHZVZkY3NoUnh5R1VpSFpSTzdkaXZVTDVTDQpmM2JmSDFYbWY1ZDQzT0NWTWRuUUV2NWVaOG8zeWVLa3ZrbkZQUGVJMU9BbjdGbDlFRVNNR2dhOGFaSG1URSttDQpsLzlMSmdDYjBnQmtPT0M0WnV4bWh2aERKV1EzWnJCS3pMQlNUZXN0NWlLNVlwcXRWVVk2THRyRW9FelVTK1lsDQpwWndXY2VQWHlHeHM5ZURsR3lNVmQraW15Y3NTU1UvVno2Mmx6MnZCS21NTXBkYldDQWhud0RsRTVqU2dyMjRRDQp0eGNXLys2N3d5KzhuQlI3UXdqVTFITndVRjBzeERWdEwrZ1NHVERnSEVZSlhZelYvT05zMy94TkpoVFNPSkxNDQpoeXNVdyttaGdackdhbUdXcHVIVU1DUitvTWJzMTc1UkcrQjJnUFFHVytPTjJnUTRyOXN2b0ZBNHBBQm8xd1dLDQpRYjRhY3pmeVVscElBOVFoSmFsZEY3S3dPSHVlV3gwRUNrNXg0T2tvVDBvWVp0dzFiR0JjRGtaSmF3SURBUUFCDQpvMU13VVRBZEJnTlZIUTRFRmdRVW90UlNIUm9IWTEyRFZ4R0NCdEhpb1g2ZmVFQXdId1lEVlIwakJCZ3dGb0FVDQpvdFJTSFJvSFkxMkRWeEdDQnRIaW9YNmZlRUF3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCDQpBUXNGQUFPQ0FnRUFSbkpsWWRjMTFHd0VxWnh6RDF2R3BDR2pDN2VWTlQ3aVY1d3IybXlybHdPYi9aUWFEa0xYDQpvVStaOVVXT1VlSXJTdzUydDdmQUpvVVAwSm5iYkMveVIrU1lqUGhvUXNiVHduOTc2ZldBWTduM3FMOXhCd1Y0DQphek41OXNjeUp0dlhMeUtOL2N5ak1ReDRLajBIMFg0bWJ6bzVZNUtzWWtYVU0vOEFPdWZMcEd0S1NGVGgrSEFDDQpab1Q5YnZHS25adnNHd0tYZFF0Wnh0akhaUjVqK3U3ZGtQOTJBT051RFNabS8rWVV4b2tBK09JbzdSR3BwSHNXDQo1ZTdNY0FTVXRtb1FORXd6dVFoVkJaRWQ1OGtKYjUrV0VWbGNzanlXNnRTbzErZ25tTWNqR1BsMWgxR2hVbjV4DQpFY0lWRnBIWXM5YWo1NmpBSjk1MVQvZjhMaWxmTlVnanBLQ0c1bnl0SUt3emxhOHNtdGlPdm1UNEpYbXBwSkI2DQo4bmdHRVluVjUrUTYwWFJ2OEhSSGp1VG9CRHVhaERrVDA2R1JGODU1d09FR2V4bkZpMXZYWUxLVllWb1V2MXRKDQo4dVdUR1pwNllDSVJldlBqbzg5ZytWTlJSaVFYUThJd0dybXE5c0RoVTlqTjA0SjdVL1RvRDFpNHE3VnlsRUc5DQorV1VGNkNLaEdBeTJIaEhwVncyTGFoOS9lUzdZMUZ1YURrWmhPZG1laG1BOCtqdHNZamJadnR5Mm1SWlF0UUZzDQpUU1VUUjREbUR2bVVPRVRmeStpRHdzK2RkWXVNTnJGeVVYV2dkMnpBQU4ydVl1UHFGY2pRcFNPODFzVTJTU3R3DQoxVzAyeUtYOGJEYmZFdjBzbUh3UzliQnFlSGo5NEM1Mjg0YXpsdTBmaUdpTm1OUEM4ckJLRmhBPQ0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQ==
+                    service:
+                      name: webhook-service
+                      namespace: metallb-system
+                      path: /convert
+                  conversionReviewVersions:
+                  - v1alpha1
+                  - v1beta1
+              group: metallb.io
+              names:
+                kind: AddressPool
+                listKind: AddressPoolList
+                plural: addresspools
+                singular: addresspool
+              scope: Namespaced
+              versions:
+              - deprecated: true
+                deprecationWarning: metallb.io v1alpha1 AddressPool is deprecated
+                name: v1alpha1
+                schema:
+                  openAPIV3Schema:
+                    description: AddressPool is the Schema for the addresspools API.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: AddressPoolSpec defines the desired state of AddressPool.
+                        properties:
+                          addresses:
+                            description: A list of IP address ranges over which MetalLB has authority.
+                              You can list multiple ranges in a single pool, they will all share
+                              the same settings. Each range can be either a CIDR prefix, or an
+                              explicit start-end range of IPs.
+                            items:
+                              type: string
+                            type: array
+                          autoAssign:
+                            default: true
+                            description: AutoAssign flag used to prevent MetallB from automatic
+                              allocation for a pool.
+                            type: boolean
+                          bgpAdvertisements:
+                            description: When an IP is allocated from this pool, how should it
+                              be translated into BGP announcements?
+                            items:
+                              properties:
+                                aggregationLength:
+                                  default: 32
+                                  description: The aggregation-length advertisement option lets
+                                    you “roll up” the /32s into a larger prefix.
+                                  format: int32
+                                  minimum: 1
+                                  type: integer
+                                aggregationLengthV6:
+                                  default: 128
+                                  description: Optional, defaults to 128 (i.e. no aggregation)
+                                    if not specified.
+                                  format: int32
+                                  type: integer
+                                communities:
+                                  description: BGP communities
+                                  items:
+                                    type: string
+                                  type: array
+                                localPref:
+                                  description: BGP LOCAL_PREF attribute which is used by BGP best
+                                    path algorithm, Path with higher localpref is preferred over
+                                    one with lower localpref.
+                                  format: int32
+                                  type: integer
+                              type: object
+                            type: array
+                          protocol:
+                            description: Protocol can be used to select how the announcement is
+                              done.
+                            enum:
+                            - layer2
+                            - bgp
+                            type: string
+                        required:
+                        - addresses
+                        - protocol
+                        type: object
+                      status:
+                        description: AddressPoolStatus defines the observed state of AddressPool.
+                        type: object
+                    required:
+                    - spec
+                    type: object
+                served: true
+                storage: false
+                subresources:
+                  status: {}
+              - deprecated: true
+                deprecationWarning: metallb.io v1beta1 AddressPool is deprecated, consider using
+                  IPAddressPool
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: AddressPool represents a pool of IP addresses that can be allocated
+                      to LoadBalancer services. AddressPool is deprecated and being replaced by
+                      IPAddressPool.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: AddressPoolSpec defines the desired state of AddressPool.
+                        properties:
+                          addresses:
+                            description: A list of IP address ranges over which MetalLB has authority.
+                              You can list multiple ranges in a single pool, they will all share
+                              the same settings. Each range can be either a CIDR prefix, or an
+                              explicit start-end range of IPs.
+                            items:
+                              type: string
+                            type: array
+                          autoAssign:
+                            default: true
+                            description: AutoAssign flag used to prevent MetallB from automatic
+                              allocation for a pool.
+                            type: boolean
+                          bgpAdvertisements:
+                            description: Drives how an IP allocated from this pool should translated
+                              into BGP announcements.
+                            items:
+                              properties:
+                                aggregationLength:
+                                  default: 32
+                                  description: The aggregation-length advertisement option lets
+                                    you “roll up” the /32s into a larger prefix.
+                                  format: int32
+                                  minimum: 1
+                                  type: integer
+                                aggregationLengthV6:
+                                  default: 128
+                                  description: Optional, defaults to 128 (i.e. no aggregation)
+                                    if not specified.
+                                  format: int32
+                                  type: integer
+                                communities:
+                                  description: BGP communities to be associated with the given
+                                    advertisement.
+                                  items:
+                                    type: string
+                                  type: array
+                                localPref:
+                                  description: BGP LOCAL_PREF attribute which is used by BGP best
+                                    path algorithm, Path with higher localpref is preferred over
+                                    one with lower localpref.
+                                  format: int32
+                                  type: integer
+                              type: object
+                            type: array
+                          protocol:
+                            description: Protocol can be used to select how the announcement is
+                              done.
+                            enum:
+                            - layer2
+                            - bgp
+                            type: string
+                        required:
+                        - addresses
+                        - protocol
+                        type: object
+                      status:
+                        description: AddressPoolStatus defines the observed state of AddressPool.
+                        type: object
+                    required:
+                    - spec
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              creationTimestamp: null
+              name: bfdprofiles.metallb.io
+            spec:
+              group: metallb.io
+              names:
+                kind: BFDProfile
+                listKind: BFDProfileList
+                plural: bfdprofiles
+                singular: bfdprofile
+              scope: Namespaced
+              versions:
+              - additionalPrinterColumns:
+                - jsonPath: .spec.passiveMode
+                  name: Passive Mode
+                  type: boolean
+                - jsonPath: .spec.transmitInterval
+                  name: Transmit Interval
+                  type: integer
+                - jsonPath: .spec.receiveInterval
+                  name: Receive Interval
+                  type: integer
+                - jsonPath: .spec.detectMultiplier
+                  name: Multiplier
+                  type: integer
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: BFDProfile represents the settings of the bfd session that can
+                      be optionally associated with a BGP session.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: BFDProfileSpec defines the desired state of BFDProfile.
+                        properties:
+                          detectMultiplier:
+                            description: Configures the detection multiplier to determine packet
+                              loss. The remote transmission interval will be multiplied by this
+                              value to determine the connection loss detection timer.
+                            format: int32
+                            maximum: 255
+                            minimum: 2
+                            type: integer
+                          echoInterval:
+                            description: Configures the minimal echo receive transmission interval
+                              that this system is capable of handling in milliseconds. Defaults
+                              to 50ms
+                            format: int32
+                            maximum: 60000
+                            minimum: 10
+                            type: integer
+                          echoMode:
+                            description: Enables or disables the echo transmission mode. This
+                              mode is disabled by default, and not supported on multi hops setups.
+                            type: boolean
+                          minimumTtl:
+                            description: 'For multi hop sessions only: configure the minimum expected
+                              TTL for an incoming BFD control packet.'
+                            format: int32
+                            maximum: 254
+                            minimum: 1
+                            type: integer
+                          passiveMode:
+                            description: 'Mark session as passive: a passive session will not
+                              attempt to start the connection and will wait for control packets
+                              from peer before it begins replying.'
+                            type: boolean
+                          receiveInterval:
+                            description: The minimum interval that this system is capable of receiving
+                              control packets in milliseconds. Defaults to 300ms.
+                            format: int32
+                            maximum: 60000
+                            minimum: 10
+                            type: integer
+                          transmitInterval:
+                            description: The minimum transmission interval (less jitter) that
+                              this system wants to use to send BFD control packets in milliseconds.
+                              Defaults to 300ms
+                            format: int32
+                            maximum: 60000
+                            minimum: 10
+                            type: integer
+                        type: object
+                      status:
+                        description: BFDProfileStatus defines the observed state of BFDProfile.
+                        type: object
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              creationTimestamp: null
+              name: bgpadvertisements.metallb.io
+            spec:
+              group: metallb.io
+              names:
+                kind: BGPAdvertisement
+                listKind: BGPAdvertisementList
+                plural: bgpadvertisements
+                singular: bgpadvertisement
+              scope: Namespaced
+              versions:
+              - additionalPrinterColumns:
+                - jsonPath: .spec.ipAddressPools
+                  name: IPAddressPools
+                  type: string
+                - jsonPath: .spec.ipAddressPoolSelectors
+                  name: IPAddressPool Selectors
+                  type: string
+                - jsonPath: .spec.peers
+                  name: Peers
+                  type: string
+                - jsonPath: .spec.nodeSelectors
+                  name: Node Selectors
+                  priority: 10
+                  type: string
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: BGPAdvertisement allows to advertise the IPs coming from the
+                      selected IPAddressPools via BGP, setting the parameters of the BGP Advertisement.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: BGPAdvertisementSpec defines the desired state of BGPAdvertisement.
+                        properties:
+                          aggregationLength:
+                            default: 32
+                            description: The aggregation-length advertisement option lets you
+                              “roll up” the /32s into a larger prefix. Defaults to 32. Works for
+                              IPv4 addresses.
+                            format: int32
+                            minimum: 1
+                            type: integer
+                          aggregationLengthV6:
+                            default: 128
+                            description: The aggregation-length advertisement option lets you
+                              “roll up” the /128s into a larger prefix. Defaults to 128. Works
+                              for IPv6 addresses.
+                            format: int32
+                            type: integer
+                          communities:
+                            description: The BGP communities to be associated with the announcement.
+                              Each item can be a community of the form 1234:1234 or the name of
+                              an alias defined in the Community CRD.
+                            items:
+                              type: string
+                            type: array
+                          ipAddressPoolSelectors:
+                            description: A selector for the IPAddressPools which would get advertised
+                              via this advertisement. If no IPAddressPool is selected by this
+                              or by the list, the advertisement is applied to all the IPAddressPools.
+                            items:
+                              description: A label selector is a label query over a set of resources.
+                                The result of matchLabels and matchExpressions are ANDed. An empty
+                                label selector matches all objects. A null label selector matches
+                                no objects.
+                              properties:
+                                matchExpressions:
+                                  description: matchExpressions is a list of label selector requirements.
+                                    The requirements are ANDed.
+                                  items:
+                                    description: A label selector requirement is a selector that
+                                      contains values, a key, and an operator that relates the
+                                      key and values.
+                                    properties:
+                                      key:
+                                        description: key is the label key that the selector applies
+                                          to.
+                                        type: string
+                                      operator:
+                                        description: operator represents a key's relationship
+                                          to a set of values. Valid operators are In, NotIn, Exists
+                                          and DoesNotExist.
+                                        type: string
+                                      values:
+                                        description: values is an array of string values. If the
+                                          operator is In or NotIn, the values array must be non-empty.
+                                          If the operator is Exists or DoesNotExist, the values
+                                          array must be empty. This array is replaced during a
+                                          strategic merge patch.
+                                        items:
+                                          type: string
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  description: matchLabels is a map of {key,value} pairs. A single
+                                    {key,value} in the matchLabels map is equivalent to an element
+                                    of matchExpressions, whose key field is "key", the operator
+                                    is "In", and the values array contains only "value". The requirements
+                                    are ANDed.
+                                  type: object
+                              type: object
+                              x-kubernetes-map-type: atomic
+                            type: array
+                          ipAddressPools:
+                            description: The list of IPAddressPools to advertise via this advertisement,
+                              selected by name.
+                            items:
+                              type: string
+                            type: array
+                          localPref:
+                            description: The BGP LOCAL_PREF attribute which is used by BGP best
+                              path algorithm, Path with higher localpref is preferred over one
+                              with lower localpref.
+                            format: int32
+                            type: integer
+                          nodeSelectors:
+                            description: NodeSelectors allows to limit the nodes to announce as
+                              next hops for the LoadBalancer IP. When empty, all the nodes having  are
+                              announced as next hops.
+                            items:
+                              description: A label selector is a label query over a set of resources.
+                                The result of matchLabels and matchExpressions are ANDed. An empty
+                                label selector matches all objects. A null label selector matches
+                                no objects.
+                              properties:
+                                matchExpressions:
+                                  description: matchExpressions is a list of label selector requirements.
+                                    The requirements are ANDed.
+                                  items:
+                                    description: A label selector requirement is a selector that
+                                      contains values, a key, and an operator that relates the
+                                      key and values.
+                                    properties:
+                                      key:
+                                        description: key is the label key that the selector applies
+                                          to.
+                                        type: string
+                                      operator:
+                                        description: operator represents a key's relationship
+                                          to a set of values. Valid operators are In, NotIn, Exists
+                                          and DoesNotExist.
+                                        type: string
+                                      values:
+                                        description: values is an array of string values. If the
+                                          operator is In or NotIn, the values array must be non-empty.
+                                          If the operator is Exists or DoesNotExist, the values
+                                          array must be empty. This array is replaced during a
+                                          strategic merge patch.
+                                        items:
+                                          type: string
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  description: matchLabels is a map of {key,value} pairs. A single
+                                    {key,value} in the matchLabels map is equivalent to an element
+                                    of matchExpressions, whose key field is "key", the operator
+                                    is "In", and the values array contains only "value". The requirements
+                                    are ANDed.
+                                  type: object
+                              type: object
+                              x-kubernetes-map-type: atomic
+                            type: array
+                          peers:
+                            description: Peers limits the bgppeer to advertise the ips of the
+                              selected pools to. When empty, the loadbalancer IP is announced
+                              to all the BGPPeers configured.
+                            items:
+                              type: string
+                            type: array
+                        type: object
+                      status:
+                        description: BGPAdvertisementStatus defines the observed state of BGPAdvertisement.
+                        type: object
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              name: bgppeers.metallb.io
+            spec:
+              conversion:
+                strategy: Webhook
+                webhook:
+                  clientConfig:
+                    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlGWlRDQ0EwMmdBd0lCQWdJVU5GRW1XcTM3MVpKdGkrMmlSQzk1WmpBV1MxZ3dEUVlKS29aSWh2Y05BUUVMDQpCUUF3UWpFTE1Ba0dBMVVFQmhNQ1dGZ3hGVEFUQmdOVkJBY01ERVJsWm1GMWJIUWdRMmwwZVRFY01Cb0dBMVVFDQpDZ3dUUkdWbVlYVnNkQ0JEYjIxd1lXNTVJRXgwWkRBZUZ3MHlNakEzTVRrd09UTXlNek5hRncweU1qQTRNVGd3DQpPVE15TXpOYU1FSXhDekFKQmdOVkJBWVRBbGhZTVJVd0V3WURWUVFIREF4RVpXWmhkV3gwSUVOcGRIa3hIREFhDQpCZ05WQkFvTUUwUmxabUYxYkhRZ1EyOXRjR0Z1ZVNCTWRHUXdnZ0lpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElDDQpEd0F3Z2dJS0FvSUNBUUNxVFpxMWZRcC9vYkdlenhES0o3OVB3Ny94azJwellualNzMlkzb1ZYSm5sRmM4YjVlDQpma2ZZQnY2bndscW1keW5PL2phWFBaQmRQSS82aFdOUDBkdVhadEtWU0NCUUpyZzEyOGNXb3F0MGNTN3pLb1VpDQpvcU1tQ0QvRXVBeFFNZjhRZDF2c1gvVllkZ0poVTZBRXJLZEpIaXpFOUJtUkNkTDBGMW1OVW55Rk82UnRtWFZUDQpidkxsTDVYeTc2R0FaQVBLOFB4aVlDa0NtbDdxN0VnTWNiOXlLWldCYmlxQ3VkTXE5TGJLNmdKNzF6YkZnSXV4DQo1L1pXK2JraTB2RlplWk9ZODUxb1psckFUNzJvMDI4NHNTWW9uN0pHZVZkY3NoUnh5R1VpSFpSTzdkaXZVTDVTDQpmM2JmSDFYbWY1ZDQzT0NWTWRuUUV2NWVaOG8zeWVLa3ZrbkZQUGVJMU9BbjdGbDlFRVNNR2dhOGFaSG1URSttDQpsLzlMSmdDYjBnQmtPT0M0WnV4bWh2aERKV1EzWnJCS3pMQlNUZXN0NWlLNVlwcXRWVVk2THRyRW9FelVTK1lsDQpwWndXY2VQWHlHeHM5ZURsR3lNVmQraW15Y3NTU1UvVno2Mmx6MnZCS21NTXBkYldDQWhud0RsRTVqU2dyMjRRDQp0eGNXLys2N3d5KzhuQlI3UXdqVTFITndVRjBzeERWdEwrZ1NHVERnSEVZSlhZelYvT05zMy94TkpoVFNPSkxNDQpoeXNVdyttaGdackdhbUdXcHVIVU1DUitvTWJzMTc1UkcrQjJnUFFHVytPTjJnUTRyOXN2b0ZBNHBBQm8xd1dLDQpRYjRhY3pmeVVscElBOVFoSmFsZEY3S3dPSHVlV3gwRUNrNXg0T2tvVDBvWVp0dzFiR0JjRGtaSmF3SURBUUFCDQpvMU13VVRBZEJnTlZIUTRFRmdRVW90UlNIUm9IWTEyRFZ4R0NCdEhpb1g2ZmVFQXdId1lEVlIwakJCZ3dGb0FVDQpvdFJTSFJvSFkxMkRWeEdDQnRIaW9YNmZlRUF3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcWhraUc5dzBCDQpBUXNGQUFPQ0FnRUFSbkpsWWRjMTFHd0VxWnh6RDF2R3BDR2pDN2VWTlQ3aVY1d3IybXlybHdPYi9aUWFEa0xYDQpvVStaOVVXT1VlSXJTdzUydDdmQUpvVVAwSm5iYkMveVIrU1lqUGhvUXNiVHduOTc2ZldBWTduM3FMOXhCd1Y0DQphek41OXNjeUp0dlhMeUtOL2N5ak1ReDRLajBIMFg0bWJ6bzVZNUtzWWtYVU0vOEFPdWZMcEd0S1NGVGgrSEFDDQpab1Q5YnZHS25adnNHd0tYZFF0Wnh0akhaUjVqK3U3ZGtQOTJBT051RFNabS8rWVV4b2tBK09JbzdSR3BwSHNXDQo1ZTdNY0FTVXRtb1FORXd6dVFoVkJaRWQ1OGtKYjUrV0VWbGNzanlXNnRTbzErZ25tTWNqR1BsMWgxR2hVbjV4DQpFY0lWRnBIWXM5YWo1NmpBSjk1MVQvZjhMaWxmTlVnanBLQ0c1bnl0SUt3emxhOHNtdGlPdm1UNEpYbXBwSkI2DQo4bmdHRVluVjUrUTYwWFJ2OEhSSGp1VG9CRHVhaERrVDA2R1JGODU1d09FR2V4bkZpMXZYWUxLVllWb1V2MXRKDQo4dVdUR1pwNllDSVJldlBqbzg5ZytWTlJSaVFYUThJd0dybXE5c0RoVTlqTjA0SjdVL1RvRDFpNHE3VnlsRUc5DQorV1VGNkNLaEdBeTJIaEhwVncyTGFoOS9lUzdZMUZ1YURrWmhPZG1laG1BOCtqdHNZamJadnR5Mm1SWlF0UUZzDQpUU1VUUjREbUR2bVVPRVRmeStpRHdzK2RkWXVNTnJGeVVYV2dkMnpBQU4ydVl1UHFGY2pRcFNPODFzVTJTU3R3DQoxVzAyeUtYOGJEYmZFdjBzbUh3UzliQnFlSGo5NEM1Mjg0YXpsdTBmaUdpTm1OUEM4ckJLRmhBPQ0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQ==
+                    service:
+                      name: webhook-service
+                      namespace: metallb-system
+                      path: /convert
+                  conversionReviewVersions:
+                  - v1beta1
+                  - v1beta2
+              group: metallb.io
+              names:
+                kind: BGPPeer
+                listKind: BGPPeerList
+                plural: bgppeers
+                singular: bgppeer
+              scope: Namespaced
+              versions:
+              - additionalPrinterColumns:
+                - jsonPath: .spec.peerAddress
+                  name: Address
+                  type: string
+                - jsonPath: .spec.peerASN
+                  name: ASN
+                  type: string
+                - jsonPath: .spec.bfdProfile
+                  name: BFD Profile
+                  type: string
+                - jsonPath: .spec.ebgpMultiHop
+                  name: Multi Hops
+                  type: string
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: BGPPeer is the Schema for the peers API.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: BGPPeerSpec defines the desired state of Peer.
+                        properties:
+                          bfdProfile:
+                            type: string
+                          ebgpMultiHop:
+                            description: EBGP peer is multi-hops away
+                            type: boolean
+                          holdTime:
+                            description: Requested BGP hold time, per RFC4271.
+                            type: string
+                          keepaliveTime:
+                            description: Requested BGP keepalive time, per RFC4271.
+                            type: string
+                          myASN:
+                            description: AS number to use for the local end of the session.
+                            format: int32
+                            maximum: 4294967295
+                            minimum: 0
+                            type: integer
+                          nodeSelectors:
+                            description: Only connect to this peer on nodes that match one of
+                              these selectors.
+                            items:
+                              properties:
+                                matchExpressions:
+                                  items:
+                                    properties:
+                                      key:
+                                        type: string
+                                      operator:
+                                        type: string
+                                      values:
+                                        items:
+                                          type: string
+                                        minItems: 1
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    - values
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  type: object
+                              type: object
+                            type: array
+                          password:
+                            description: Authentication password for routers enforcing TCP MD5
+                              authenticated sessions
+                            type: string
+                          peerASN:
+                            description: AS number to expect from the remote end of the session.
+                            format: int32
+                            maximum: 4294967295
+                            minimum: 0
+                            type: integer
+                          peerAddress:
+                            description: Address to dial when establishing the session.
+                            type: string
+                          peerPort:
+                            description: Port to dial when establishing the session.
+                            maximum: 16384
+                            minimum: 0
+                            type: integer
+                          routerID:
+                            description: BGP router ID to advertise to the peer
+                            type: string
+                          sourceAddress:
+                            description: Source address to use when establishing the session.
+                            type: string
+                        required:
+                        - myASN
+                        - peerASN
+                        - peerAddress
+                        type: object
+                      status:
+                        description: BGPPeerStatus defines the observed state of Peer.
+                        type: object
+                    type: object
+                served: true
+                storage: false
+                subresources:
+                  status: {}
+              - additionalPrinterColumns:
+                - jsonPath: .spec.peerAddress
+                  name: Address
+                  type: string
+                - jsonPath: .spec.peerASN
+                  name: ASN
+                  type: string
+                - jsonPath: .spec.bfdProfile
+                  name: BFD Profile
+                  type: string
+                - jsonPath: .spec.ebgpMultiHop
+                  name: Multi Hops
+                  type: string
+                name: v1beta2
+                schema:
+                  openAPIV3Schema:
+                    description: BGPPeer is the Schema for the peers API.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: BGPPeerSpec defines the desired state of Peer.
+                        properties:
+                          bfdProfile:
+                            description: The name of the BFD Profile to be used for the BFD session
+                              associated to the BGP session. If not set, the BFD session won't
+                              be set up.
+                            type: string
+                          ebgpMultiHop:
+                            description: To set if the BGPPeer is multi-hops away. Needed for
+                              FRR mode only.
+                            type: boolean
+                          holdTime:
+                            description: Requested BGP hold time, per RFC4271.
+                            type: string
+                          keepaliveTime:
+                            description: Requested BGP keepalive time, per RFC4271.
+                            type: string
+                          myASN:
+                            description: AS number to use for the local end of the session.
+                            format: int32
+                            maximum: 4294967295
+                            minimum: 0
+                            type: integer
+                          nodeSelectors:
+                            description: Only connect to this peer on nodes that match one of
+                              these selectors.
+                            items:
+                              description: A label selector is a label query over a set of resources.
+                                The result of matchLabels and matchExpressions are ANDed. An empty
+                                label selector matches all objects. A null label selector matches
+                                no objects.
+                              properties:
+                                matchExpressions:
+                                  description: matchExpressions is a list of label selector requirements.
+                                    The requirements are ANDed.
+                                  items:
+                                    description: A label selector requirement is a selector that
+                                      contains values, a key, and an operator that relates the
+                                      key and values.
+                                    properties:
+                                      key:
+                                        description: key is the label key that the selector applies
+                                          to.
+                                        type: string
+                                      operator:
+                                        description: operator represents a key's relationship
+                                          to a set of values. Valid operators are In, NotIn, Exists
+                                          and DoesNotExist.
+                                        type: string
+                                      values:
+                                        description: values is an array of string values. If the
+                                          operator is In or NotIn, the values array must be non-empty.
+                                          If the operator is Exists or DoesNotExist, the values
+                                          array must be empty. This array is replaced during a
+                                          strategic merge patch.
+                                        items:
+                                          type: string
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  description: matchLabels is a map of {key,value} pairs. A single
+                                    {key,value} in the matchLabels map is equivalent to an element
+                                    of matchExpressions, whose key field is "key", the operator
+                                    is "In", and the values array contains only "value". The requirements
+                                    are ANDed.
+                                  type: object
+                              type: object
+                              x-kubernetes-map-type: atomic
+                            type: array
+                          password:
+                            description: Authentication password for routers enforcing TCP MD5
+                              authenticated sessions
+                            type: string
+                          passwordSecret:
+                            description: passwordSecret is name of the authentication secret for
+                              BGP Peer. the secret must be of type "kubernetes.io/basic-auth",
+                              and created in the same namespace as the MetalLB deployment. The
+                              password is stored in the secret as the key "password".
+                            properties:
+                              name:
+                                description: name is unique within a namespace to reference a
+                                  secret resource.
+                                type: string
+                              namespace:
+                                description: namespace defines the space within which the secret
+                                  name must be unique.
+                                type: string
+                            type: object
+                            x-kubernetes-map-type: atomic
+                          peerASN:
+                            description: AS number to expect from the remote end of the session.
+                            format: int32
+                            maximum: 4294967295
+                            minimum: 0
+                            type: integer
+                          peerAddress:
+                            description: Address to dial when establishing the session.
+                            type: string
+                          peerPort:
+                            default: 179
+                            description: Port to dial when establishing the session.
+                            maximum: 16384
+                            minimum: 0
+                            type: integer
+                          routerID:
+                            description: BGP router ID to advertise to the peer
+                            type: string
+                          sourceAddress:
+                            description: Source address to use when establishing the session.
+                            type: string
+                          vrf:
+                            description: To set if we want to peer with the BGPPeer using an interface
+                              belonging to a host vrf
+                            type: string
+                        required:
+                        - myASN
+                        - peerASN
+                        - peerAddress
+                        type: object
+                      status:
+                        description: BGPPeerStatus defines the observed state of Peer.
+                        type: object
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              creationTimestamp: null
+              name: communities.metallb.io
+            spec:
+              group: metallb.io
+              names:
+                kind: Community
+                listKind: CommunityList
+                plural: communities
+                singular: community
+              scope: Namespaced
+              versions:
+              - name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: Community is a collection of aliases for communities. Users can
+                      define named aliases to be used in the BGPPeer CRD.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: CommunitySpec defines the desired state of Community.
+                        properties:
+                          communities:
+                            items:
+                              properties:
+                                name:
+                                  description: The name of the alias for the community.
+                                  type: string
+                                value:
+                                  description: The BGP community value corresponding to the given
+                                    name.
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
+                      status:
+                        description: CommunityStatus defines the observed state of Community.
+                        type: object
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              creationTimestamp: null
+              name: ipaddresspools.metallb.io
+            spec:
+              group: metallb.io
+              names:
+                kind: IPAddressPool
+                listKind: IPAddressPoolList
+                plural: ipaddresspools
+                singular: ipaddresspool
+              scope: Namespaced
+              versions:
+              - additionalPrinterColumns:
+                - jsonPath: .spec.autoAssign
+                  name: Auto Assign
+                  type: boolean
+                - jsonPath: .spec.avoidBuggyIPs
+                  name: Avoid Buggy IPs
+                  type: boolean
+                - jsonPath: .spec.addresses
+                  name: Addresses
+                  type: string
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: IPAddressPool represents a pool of IP addresses that can be allocated
+                      to LoadBalancer services.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: IPAddressPoolSpec defines the desired state of IPAddressPool.
+                        properties:
+                          addresses:
+                            description: A list of IP address ranges over which MetalLB has authority.
+                              You can list multiple ranges in a single pool, they will all share
+                              the same settings. Each range can be either a CIDR prefix, or an
+                              explicit start-end range of IPs.
+                            items:
+                              type: string
+                            type: array
+                          autoAssign:
+                            default: true
+                            description: AutoAssign flag used to prevent MetallB from automatic
+                              allocation for a pool.
+                            type: boolean
+                          avoidBuggyIPs:
+                            default: false
+                            description: AvoidBuggyIPs prevents addresses ending with .0 and .255
+                              to be used by a pool.
+                            type: boolean
+                          serviceAllocation:
+                            description: AllocateTo makes ip pool allocation to specific namespace
+                              and/or service. The controller will use the pool with lowest value
+                              of priority in case of multiple matches. A pool with no priority
+                              set will be used only if the pools with priority can't be used.
+                              If multiple matching IPAddressPools are available it will check
+                              for the availability of IPs sorting the matching IPAddressPools
+                              by priority, starting from the highest to the lowest. If multiple
+                              IPAddressPools have the same priority, choice will be random.
+                            properties:
+                              namespaceSelectors:
+                                description: NamespaceSelectors list of label selectors to select
+                                  namespace(s) for ip pool, an alternative to using namespace
+                                  list.
+                                items:
+                                  description: A label selector is a label query over a set of
+                                    resources. The result of matchLabels and matchExpressions
+                                    are ANDed. An empty label selector matches all objects. A
+                                    null label selector matches no objects.
+                                  properties:
+                                    matchExpressions:
+                                      description: matchExpressions is a list of label selector
+                                        requirements. The requirements are ANDed.
+                                      items:
+                                        description: A label selector requirement is a selector
+                                          that contains values, a key, and an operator that relates
+                                          the key and values.
+                                        properties:
+                                          key:
+                                            description: key is the label key that the selector
+                                              applies to.
+                                            type: string
+                                          operator:
+                                            description: operator represents a key's relationship
+                                              to a set of values. Valid operators are In, NotIn,
+                                              Exists and DoesNotExist.
+                                            type: string
+                                          values:
+                                            description: values is an array of string values.
+                                              If the operator is In or NotIn, the values array
+                                              must be non-empty. If the operator is Exists or
+                                              DoesNotExist, the values array must be empty. This
+                                              array is replaced during a strategic merge patch.
+                                            items:
+                                              type: string
+                                            type: array
+                                        required:
+                                        - key
+                                        - operator
+                                        type: object
+                                      type: array
+                                    matchLabels:
+                                      additionalProperties:
+                                        type: string
+                                      description: matchLabels is a map of {key,value} pairs.
+                                        A single {key,value} in the matchLabels map is equivalent
+                                        to an element of matchExpressions, whose key field is
+                                        "key", the operator is "In", and the values array contains
+                                        only "value". The requirements are ANDed.
+                                      type: object
+                                  type: object
+                                  x-kubernetes-map-type: atomic
+                                type: array
+                              namespaces:
+                                description: Namespaces list of namespace(s) on which ip pool
+                                  can be attached.
+                                items:
+                                  type: string
+                                type: array
+                              priority:
+                                description: Priority priority given for ip pool while ip allocation
+                                  on a service.
+                                type: integer
+                              serviceSelectors:
+                                description: ServiceSelectors list of label selector to select
+                                  service(s) for which ip pool can be used for ip allocation.
+                                items:
+                                  description: A label selector is a label query over a set of
+                                    resources. The result of matchLabels and matchExpressions
+                                    are ANDed. An empty label selector matches all objects. A
+                                    null label selector matches no objects.
+                                  properties:
+                                    matchExpressions:
+                                      description: matchExpressions is a list of label selector
+                                        requirements. The requirements are ANDed.
+                                      items:
+                                        description: A label selector requirement is a selector
+                                          that contains values, a key, and an operator that relates
+                                          the key and values.
+                                        properties:
+                                          key:
+                                            description: key is the label key that the selector
+                                              applies to.
+                                            type: string
+                                          operator:
+                                            description: operator represents a key's relationship
+                                              to a set of values. Valid operators are In, NotIn,
+                                              Exists and DoesNotExist.
+                                            type: string
+                                          values:
+                                            description: values is an array of string values.
+                                              If the operator is In or NotIn, the values array
+                                              must be non-empty. If the operator is Exists or
+                                              DoesNotExist, the values array must be empty. This
+                                              array is replaced during a strategic merge patch.
+                                            items:
+                                              type: string
+                                            type: array
+                                        required:
+                                        - key
+                                        - operator
+                                        type: object
+                                      type: array
+                                    matchLabels:
+                                      additionalProperties:
+                                        type: string
+                                      description: matchLabels is a map of {key,value} pairs.
+                                        A single {key,value} in the matchLabels map is equivalent
+                                        to an element of matchExpressions, whose key field is
+                                        "key", the operator is "In", and the values array contains
+                                        only "value". The requirements are ANDed.
+                                      type: object
+                                  type: object
+                                  x-kubernetes-map-type: atomic
+                                type: array
+                            type: object
+                        required:
+                        - addresses
+                        type: object
+                      status:
+                        description: IPAddressPoolStatus defines the observed state of IPAddressPool.
+                        type: object
+                    required:
+                    - spec
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: apiextensions.k8s.io/v1
+            kind: CustomResourceDefinition
+            metadata:
+              annotations:
+                controller-gen.kubebuilder.io/version: v0.11.1
+              creationTimestamp: null
+              name: l2advertisements.metallb.io
+            spec:
+              group: metallb.io
+              names:
+                kind: L2Advertisement
+                listKind: L2AdvertisementList
+                plural: l2advertisements
+                singular: l2advertisement
+              scope: Namespaced
+              versions:
+              - additionalPrinterColumns:
+                - jsonPath: .spec.ipAddressPools
+                  name: IPAddressPools
+                  type: string
+                - jsonPath: .spec.ipAddressPoolSelectors
+                  name: IPAddressPool Selectors
+                  type: string
+                - jsonPath: .spec.interfaces
+                  name: Interfaces
+                  type: string
+                - jsonPath: .spec.nodeSelectors
+                  name: Node Selectors
+                  priority: 10
+                  type: string
+                name: v1beta1
+                schema:
+                  openAPIV3Schema:
+                    description: L2Advertisement allows to advertise the LoadBalancer IPs provided
+                      by the selected pools via L2.
+                    properties:
+                      apiVersion:
+                        description: 'APIVersion defines the versioned schema of this representation
+                          of an object. Servers should convert recognized schemas to the latest
+                          internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+                        type: string
+                      kind:
+                        description: 'Kind is a string value representing the REST resource this
+                          object represents. Servers may infer this from the endpoint the client
+                          submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+                        type: string
+                      metadata:
+                        type: object
+                      spec:
+                        description: L2AdvertisementSpec defines the desired state of L2Advertisement.
+                        properties:
+                          interfaces:
+                            description: A list of interfaces to announce from. The LB IP will
+                              be announced only from these interfaces. If the field is not set,
+                              we advertise from all the interfaces on the host.
+                            items:
+                              type: string
+                            type: array
+                          ipAddressPoolSelectors:
+                            description: A selector for the IPAddressPools which would get advertised
+                              via this advertisement. If no IPAddressPool is selected by this
+                              or by the list, the advertisement is applied to all the IPAddressPools.
+                            items:
+                              description: A label selector is a label query over a set of resources.
+                                The result of matchLabels and matchExpressions are ANDed. An empty
+                                label selector matches all objects. A null label selector matches
+                                no objects.
+                              properties:
+                                matchExpressions:
+                                  description: matchExpressions is a list of label selector requirements.
+                                    The requirements are ANDed.
+                                  items:
+                                    description: A label selector requirement is a selector that
+                                      contains values, a key, and an operator that relates the
+                                      key and values.
+                                    properties:
+                                      key:
+                                        description: key is the label key that the selector applies
+                                          to.
+                                        type: string
+                                      operator:
+                                        description: operator represents a key's relationship
+                                          to a set of values. Valid operators are In, NotIn, Exists
+                                          and DoesNotExist.
+                                        type: string
+                                      values:
+                                        description: values is an array of string values. If the
+                                          operator is In or NotIn, the values array must be non-empty.
+                                          If the operator is Exists or DoesNotExist, the values
+                                          array must be empty. This array is replaced during a
+                                          strategic merge patch.
+                                        items:
+                                          type: string
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  description: matchLabels is a map of {key,value} pairs. A single
+                                    {key,value} in the matchLabels map is equivalent to an element
+                                    of matchExpressions, whose key field is "key", the operator
+                                    is "In", and the values array contains only "value". The requirements
+                                    are ANDed.
+                                  type: object
+                              type: object
+                              x-kubernetes-map-type: atomic
+                            type: array
+                          ipAddressPools:
+                            description: The list of IPAddressPools to advertise via this advertisement,
+                              selected by name.
+                            items:
+                              type: string
+                            type: array
+                          nodeSelectors:
+                            description: NodeSelectors allows to limit the nodes to announce as
+                              next hops for the LoadBalancer IP. When empty, all the nodes having  are
+                              announced as next hops.
+                            items:
+                              description: A label selector is a label query over a set of resources.
+                                The result of matchLabels and matchExpressions are ANDed. An empty
+                                label selector matches all objects. A null label selector matches
+                                no objects.
+                              properties:
+                                matchExpressions:
+                                  description: matchExpressions is a list of label selector requirements.
+                                    The requirements are ANDed.
+                                  items:
+                                    description: A label selector requirement is a selector that
+                                      contains values, a key, and an operator that relates the
+                                      key and values.
+                                    properties:
+                                      key:
+                                        description: key is the label key that the selector applies
+                                          to.
+                                        type: string
+                                      operator:
+                                        description: operator represents a key's relationship
+                                          to a set of values. Valid operators are In, NotIn, Exists
+                                          and DoesNotExist.
+                                        type: string
+                                      values:
+                                        description: values is an array of string values. If the
+                                          operator is In or NotIn, the values array must be non-empty.
+                                          If the operator is Exists or DoesNotExist, the values
+                                          array must be empty. This array is replaced during a
+                                          strategic merge patch.
+                                        items:
+                                          type: string
+                                        type: array
+                                    required:
+                                    - key
+                                    - operator
+                                    type: object
+                                  type: array
+                                matchLabels:
+                                  additionalProperties:
+                                    type: string
+                                  description: matchLabels is a map of {key,value} pairs. A single
+                                    {key,value} in the matchLabels map is equivalent to an element
+                                    of matchExpressions, whose key field is "key", the operator
+                                    is "In", and the values array contains only "value". The requirements
+                                    are ANDed.
+                                  type: object
+                              type: object
+                              x-kubernetes-map-type: atomic
+                            type: array
+                        type: object
+                      status:
+                        description: L2AdvertisementStatus defines the observed state of L2Advertisement.
+                        type: object
+                    type: object
+                served: true
+                storage: true
+                subresources:
+                  status: {}
+            ---
+            apiVersion: v1
+            kind: ServiceAccount
+            metadata:
+              labels:
+                app: metallb
+              name: controller
+              namespace: metallb-system
+            ---
+            apiVersion: v1
+            kind: ServiceAccount
+            metadata:
+              labels:
+                app: metallb
+              name: speaker
+              namespace: metallb-system
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: Role
+            metadata:
+              labels:
+                app: metallb
+              name: controller
+              namespace: metallb-system
+            rules:
+            - apiGroups:
+              - ""
+              resources:
+              - secrets
+              verbs:
+              - create
+              - delete
+              - get
+              - list
+              - patch
+              - update
+              - watch
+            - apiGroups:
+              - ""
+              resourceNames:
+              - memberlist
+              resources:
+              - secrets
+              verbs:
+              - list
+            - apiGroups:
+              - apps
+              resourceNames:
+              - controller
+              resources:
+              - deployments
+              verbs:
+              - get
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bgppeers
+              verbs:
+              - get
+              - list
+            - apiGroups:
+              - metallb.io
+              resources:
+              - addresspools
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bfdprofiles
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - ipaddresspools
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bgpadvertisements
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - l2advertisements
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - communities
+              verbs:
+              - get
+              - list
+              - watch
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: Role
+            metadata:
+              labels:
+                app: metallb
+              name: pod-lister
+              namespace: metallb-system
+            rules:
+            - apiGroups:
+              - ""
+              resources:
+              - pods
+              verbs:
+              - list
+            - apiGroups:
+              - ""
+              resources:
+              - secrets
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - addresspools
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bfdprofiles
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bgppeers
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - l2advertisements
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - bgpadvertisements
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - ipaddresspools
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - metallb.io
+              resources:
+              - communities
+              verbs:
+              - get
+              - list
+              - watch
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: ClusterRole
+            metadata:
+              labels:
+                app: metallb
+              name: metallb-system:controller
+            rules:
+            - apiGroups:
+              - ""
+              resources:
+              - services
+              - namespaces
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - ""
+              resources:
+              - services/status
+              verbs:
+              - update
+            - apiGroups:
+              - ""
+              resources:
+              - events
+              verbs:
+              - create
+              - patch
+            - apiGroups:
+              - policy
+              resourceNames:
+              - controller
+              resources:
+              - podsecuritypolicies
+              verbs:
+              - use
+            - apiGroups:
+              - admissionregistration.k8s.io
+              resourceNames:
+              - metallb-webhook-configuration
+              resources:
+              - validatingwebhookconfigurations
+              - mutatingwebhookconfigurations
+              verbs:
+              - create
+              - delete
+              - get
+              - list
+              - patch
+              - update
+              - watch
+            - apiGroups:
+              - admissionregistration.k8s.io
+              resources:
+              - validatingwebhookconfigurations
+              - mutatingwebhookconfigurations
+              verbs:
+              - list
+              - watch
+            - apiGroups:
+              - apiextensions.k8s.io
+              resourceNames:
+              - addresspools.metallb.io
+              - bfdprofiles.metallb.io
+              - bgpadvertisements.metallb.io
+              - bgppeers.metallb.io
+              - ipaddresspools.metallb.io
+              - l2advertisements.metallb.io
+              - communities.metallb.io
+              resources:
+              - customresourcedefinitions
+              verbs:
+              - create
+              - delete
+              - get
+              - list
+              - patch
+              - update
+              - watch
+            - apiGroups:
+              - apiextensions.k8s.io
+              resources:
+              - customresourcedefinitions
+              verbs:
+              - list
+              - watch
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: ClusterRole
+            metadata:
+              labels:
+                app: metallb
+              name: metallb-system:speaker
+            rules:
+            - apiGroups:
+              - ""
+              resources:
+              - services
+              - endpoints
+              - nodes
+              - namespaces
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - discovery.k8s.io
+              resources:
+              - endpointslices
+              verbs:
+              - get
+              - list
+              - watch
+            - apiGroups:
+              - ""
+              resources:
+              - events
+              verbs:
+              - create
+              - patch
+            - apiGroups:
+              - policy
+              resourceNames:
+              - speaker
+              resources:
+              - podsecuritypolicies
+              verbs:
+              - use
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: RoleBinding
+            metadata:
+              labels:
+                app: metallb
+              name: controller
+              namespace: metallb-system
+            roleRef:
+              apiGroup: rbac.authorization.k8s.io
+              kind: Role
+              name: controller
+            subjects:
+            - kind: ServiceAccount
+              name: controller
+              namespace: metallb-system
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: RoleBinding
+            metadata:
+              labels:
+                app: metallb
+              name: pod-lister
+              namespace: metallb-system
+            roleRef:
+              apiGroup: rbac.authorization.k8s.io
+              kind: Role
+              name: pod-lister
+            subjects:
+            - kind: ServiceAccount
+              name: speaker
+              namespace: metallb-system
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: ClusterRoleBinding
+            metadata:
+              labels:
+                app: metallb
+              name: metallb-system:controller
+            roleRef:
+              apiGroup: rbac.authorization.k8s.io
+              kind: ClusterRole
+              name: metallb-system:controller
+            subjects:
+            - kind: ServiceAccount
+              name: controller
+              namespace: metallb-system
+            ---
+            apiVersion: rbac.authorization.k8s.io/v1
+            kind: ClusterRoleBinding
+            metadata:
+              labels:
+                app: metallb
+              name: metallb-system:speaker
+            roleRef:
+              apiGroup: rbac.authorization.k8s.io
+              kind: ClusterRole
+              name: metallb-system:speaker
+            subjects:
+            - kind: ServiceAccount
+              name: speaker
+              namespace: metallb-system
+            ---
+            apiVersion: v1
+            kind: Secret
+            metadata:
+              name: webhook-server-cert
+              namespace: metallb-system
+            ---
+            apiVersion: v1
+            kind: Service
+            metadata:
+              name: webhook-service
+              namespace: metallb-system
+            spec:
+              ports:
+              - port: 443
+                targetPort: 9443
+              selector:
+                component: controller
+            ---
+            apiVersion: apps/v1
+            kind: Deployment
+            metadata:
+              labels:
+                app: metallb
+                component: controller
+              name: controller
+              namespace: metallb-system
+            spec:
+              revisionHistoryLimit: 3
+              selector:
+                matchLabels:
+                  app: metallb
+                  component: controller
+              template:
+                metadata:
+                  annotations:
+                    prometheus.io/port: "7472"
+                    prometheus.io/scrape: "true"
+                  labels:
+                    app: metallb
+                    component: controller
+                spec:
+                  containers:
+                  - args:
+                    - --port=7472
+                    - --log-level=info
+                    env:
+                    - name: METALLB_ML_SECRET_NAME
+                      value: memberlist
+                    - name: METALLB_DEPLOYMENT
+                      value: controller
+                    image: quay.io/metallb/controller:v0.13.9
+                    livenessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /metrics
+                        port: monitoring
+                      initialDelaySeconds: 10
+                      periodSeconds: 10
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    name: controller
+                    ports:
+                    - containerPort: 7472
+                      name: monitoring
+                    - containerPort: 9443
+                      name: webhook-server
+                      protocol: TCP
+                    readinessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /metrics
+                        port: monitoring
+                      initialDelaySeconds: 10
+                      periodSeconds: 10
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                      capabilities:
+                        drop:
+                        - all
+                      readOnlyRootFilesystem: true
+                    volumeMounts:
+                    - mountPath: /tmp/k8s-webhook-server/serving-certs
+                      name: cert
+                      readOnly: true
+                  nodeSelector:
+                    kubernetes.io/os: linux
+                  securityContext:
+                    fsGroup: 65534
+                    runAsNonRoot: true
+                    runAsUser: 65534
+                  serviceAccountName: controller
+                  terminationGracePeriodSeconds: 0
+                  volumes:
+                  - name: cert
+                    secret:
+                      defaultMode: 420
+                      secretName: webhook-server-cert
+            ---
+            apiVersion: apps/v1
+            kind: DaemonSet
+            metadata:
+              labels:
+                app: metallb
+                component: speaker
+              name: speaker
+              namespace: metallb-system
+            spec:
+              selector:
+                matchLabels:
+                  app: metallb
+                  component: speaker
+              template:
+                metadata:
+                  annotations:
+                    prometheus.io/port: "7472"
+                    prometheus.io/scrape: "true"
+                  labels:
+                    app: metallb
+                    component: speaker
+                spec:
+                  containers:
+                  - args:
+                    - --port=7472
+                    - --log-level=info
+                    env:
+                    - name: METALLB_NODE_NAME
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: spec.nodeName
+                    - name: METALLB_HOST
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: status.hostIP
+                    - name: METALLB_ML_BIND_ADDR
+                      valueFrom:
+                        fieldRef:
+                          fieldPath: status.podIP
+                    - name: METALLB_ML_LABELS
+                      value: app=metallb,component=speaker
+                    - name: METALLB_ML_SECRET_KEY_PATH
+                      value: /etc/ml_secret_key
+                    image: quay.io/metallb/speaker:v0.13.9
+                    livenessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /metrics
+                        port: monitoring
+                      initialDelaySeconds: 10
+                      periodSeconds: 10
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    name: speaker
+                    ports:
+                    - containerPort: 7472
+                      name: monitoring
+                    - containerPort: 7946
+                      name: memberlist-tcp
+                    - containerPort: 7946
+                      name: memberlist-udp
+                      protocol: UDP
+                    readinessProbe:
+                      failureThreshold: 3
+                      httpGet:
+                        path: /metrics
+                        port: monitoring
+                      initialDelaySeconds: 10
+                      periodSeconds: 10
+                      successThreshold: 1
+                      timeoutSeconds: 1
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                      capabilities:
+                        add:
+                        - NET_RAW
+                        drop:
+                        - ALL
+                      readOnlyRootFilesystem: true
+                    volumeMounts:
+                    - mountPath: /etc/ml_secret_key
+                      name: memberlist
+                      readOnly: true
+                  hostNetwork: true
+                  nodeSelector:
+                    kubernetes.io/os: linux
+                  serviceAccountName: speaker
+                  terminationGracePeriodSeconds: 2
+                  tolerations:
+                  - effect: NoSchedule
+                    key: node-role.kubernetes.io/master
+                    operator: Exists
+                  - effect: NoSchedule
+                    key: node-role.kubernetes.io/control-plane
+                    operator: Exists
+                  volumes:
+                  - name: memberlist
+                    secret:
+                      defaultMode: 420
+                      secretName: memberlist
+            ---
+            apiVersion: admissionregistration.k8s.io/v1
+            kind: ValidatingWebhookConfiguration
+            metadata:
+              creationTimestamp: null
+              name: metallb-webhook-configuration
+            webhooks:
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta2-bgppeer
+              failurePolicy: Fail
+              name: bgppeersvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta2
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - bgppeers
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-addresspool
+              failurePolicy: Fail
+              name: addresspoolvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - addresspools
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-bfdprofile
+              failurePolicy: Fail
+              name: bfdprofilevalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - DELETE
+                resources:
+                - bfdprofiles
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-bgpadvertisement
+              failurePolicy: Fail
+              name: bgpadvertisementvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - bgpadvertisements
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-community
+              failurePolicy: Fail
+              name: communityvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - communities
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-ipaddresspool
+              failurePolicy: Fail
+              name: ipaddresspoolvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - ipaddresspools
+              sideEffects: None
+            - admissionReviewVersions:
+              - v1
+              clientConfig:
+                service:
+                  name: webhook-service
+                  namespace: metallb-system
+                  path: /validate-metallb-io-v1beta1-l2advertisement
+              failurePolicy: Fail
+              name: l2advertisementvalidationwebhook.metallb.io
+              rules:
+              - apiGroups:
+                - metallb.io
+                apiVersions:
+                - v1beta1
+                operations:
+                - CREATE
+                - UPDATE
+                resources:
+                - l2advertisements
+              sideEffects: None
