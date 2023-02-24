@@ -99,7 +99,7 @@ stages:
                 spec:
                   containers:
                   - name: nginx
-                    image: dinesh1205reddy/nginx:v.0
+                    image: dinesh1205reddy/nginx:1.0
                     ports:
                     - containerPort: 80
             ---
